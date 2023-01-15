@@ -600,15 +600,11 @@ blockquote {
     color: var(--blue-color-2);
     transition: all 1000ms linear;
   }
-  .projects-box:hover {
-    background: #02225a;
+  /* .projects-box:hover {
     color: var(--bg-color);
-    /* color: var(--crimson-color-2); */
-    transition: all 1000ms linear;
-    /* -webkit-transition: background-color 1000ms linear;
-    -ms-transition: background-color 1000ms linear;
-    transition: background-color 1000ms linear; */
-  }
+    background: #02225a;
+  } */
+
   .projects-box h3 {
     font-weight: 400;
     font-size: 25px;
@@ -694,6 +690,21 @@ blockquote {
   .swiper-slide {
     position: relative;
     padding-top: 16.3%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    transition: all 1000ms linear; 
+  }
+
+  .swiper-slide:hover {
+    color: var(--bg-color);
+    background: #02225a;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    /* border-top-left-radius: 20px;
+    border-top-right-radius: 20px; */
+    /* transition: all 1000ms linear; */
   }
 
   .swiper-backface-hidden .swiper-slide {
@@ -701,12 +712,13 @@ blockquote {
   }
 
   .swiper-slide img {
-    object-fit: cover;
+    object-fit: contain;
     width: 100%;
     height: auto;
     position: absolute;
     left: 0;
     top: 0;
+    /* object-fit: cover; */
   }
 
 
